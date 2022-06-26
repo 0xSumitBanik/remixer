@@ -1,6 +1,6 @@
-### Remixer
+## Remixer
+![](https://img.shields.io/github/downloads/isumitbanik/remixer/total?color=blue&style=flat-square)
 
-#### About
 `remixer` allows you to generate shareable Remix IDE link for Solidity Smart contracts in your system.
 
 The tool has only one command for utility:
@@ -9,7 +9,7 @@ The tool has only one command for utility:
 
 #### Installation
 
-
+Download the appropriate binary from the [releases](https://github.com/iSumitBanik/remixer/releases) page and add it to the PATH.
 
 #### Usage
 
@@ -34,3 +34,7 @@ Flags:
   -p, --plugins string        List of Plugins to be activated for the Remix IDE (seperated by commas)
   -t, --theme string          Theme for the Remix IDE (default "Dark")
 ```
+
+#### Contributing
+
+This project has been developed as a part of implementing my knowledge on Go. If you feel there are certain areas that can be optimized, please feel free to contribute to this project.
