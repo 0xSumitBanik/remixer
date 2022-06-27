@@ -3,6 +3,7 @@ package utils
 import (
 	"encoding/base64"
 	"io/ioutil"
+	"path/filepath"
 
 	"github.com/atotto/clipboard"
 	"github.com/isumitbanik/remixer/pkg/config"
@@ -21,4 +22,9 @@ func ReadFileContent(path string) ([]byte, error) {
 func CopyToClipboard(content string) {
 	err := clipboard.WriteAll(content)
 	config.CheckError(err)
+}
+
+func CheckFileExtension(path string, extension string) (bool) {
+	fileExtension := filepath.Ext(path)
+	return fileExtension == extension
 }
